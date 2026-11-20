@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# macOS folder-icon files ("Icon\r") and Finder metadata
+Icon?
+.DS_Store
+
+# Captured browser sessions and local scratch stay out of the repo
+*.har
+har/
+mcp.json
+.scratch/

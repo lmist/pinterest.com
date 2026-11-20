@@ -1,0 +1,31 @@
+[project]
+name = "pinterest-mcp"
+version = "0.1.0"
+description = "MCP server for Pinterest search and retrieval (live API or HAR archive)"
+readme = "README.md"
+authors = [
+    { name = "oxfern", email = "286927284+oxfern@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "cryptography>=44",
+    "httpx>=0.28.1",
+    "mcp>=1.9",
+]
+
+[project.optional-dependencies]
+login = ["playwright>=1.50"]
+
+[project.scripts]
+pinterest-mcp = "pinterest_mcp:main"
+pinterest = "pinterest_mcp.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+]

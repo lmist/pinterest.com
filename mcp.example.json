@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "pinterest": {
+      "command": "uv",
+      "args": ["--directory", "/absolute/path/to/pinterest.com", "run", "pinterest-mcp"],
+      "env": {
+        "PINTEREST_MODE": "live",
+        "PINTEREST_BASE_URL": "https://nl.pinterest.com"
+      }
+    }
+  }
+}
